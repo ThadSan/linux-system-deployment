@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Projet — SAÉ 1.03</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+
+<body class="pt-5">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html">SAÉ 1.03</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="project.html">Projet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="conclusion.html">Conclusion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="references.html">Références</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+
+            <h1 class="fw-bold mb-5">Présentation du projet</h1>
+
+            <!-- OBJECTIFS -->
+            <section class="mb-5">
+                <h2 class="h4 fw-semibold mb-3">Objectifs de la SAÉ</h2>
+                <p>
+                    L’objectif principal de cette SAÉ était de découvrir et de mettre en
+                    œuvre les bases de l’administration système sous Linux dans un
+                    contexte proche d’un environnement professionnel.
+                </p>
+                <p>
+                    Le travail portait notamment sur l’installation d’un système
+                    d’exploitation, la gestion des utilisateurs et des droits,
+                    la sécurisation minimale du système ainsi que la mise en place
+                    d’un service réseau fonctionnel.
+                </p>
+            </section>
+
+            <!-- VIRTUALISATION -->
+            <section class="mb-5">
+                <h2 class="h4 fw-semibold mb-3">Virtualisation et environnement</h2>
+                <p>
+                    Le système a été déployé au sein d’une machine virtuelle afin
+                    d’évoluer dans un environnement isolé du système hôte.
+                    Cette approche permet de tester et configurer un système Linux
+                    sans compromettre la machine physique.
+                </p>
+                <p>
+                    Une machine virtuelle Debian GNU/Linux a été créée à l’aide de
+                    VMware Workstation. Les ressources matérielles ont été définies
+                    de manière équilibrée afin d’assurer la stabilité du système
+                    tout en conservant de bonnes performances.
+                </p>
+            </section>
+
+            <!-- USERS -->
+            <section class="mb-5">
+                <h2 class="h4 fw-semibold mb-3">Gestion des utilisateurs et des droits</h2>
+                <p>
+                    Une organisation claire des comptes utilisateurs a été mise en
+                    place, distinguant les utilisateurs standards des comptes
+                    disposant de privilèges administratifs.
+                </p>
+                <p>
+                    L’utilisation du mécanisme <code>sudo</code> permet de limiter
+                    l’usage direct du compte <code>root</code>, renforçant ainsi
+                    la sécurité du système et assurant une meilleure traçabilité
+                    des actions sensibles.
+                </p>
+            </section>
+
+            <!-- APACHE -->
+            <section class="mb-5">
+                <h2 class="h4 fw-semibold mb-3">Déploiement du serveur web</h2>
+                <p>
+                    Un serveur web Apache a été installé à l’aide du gestionnaire
+                    de paquets officiel de Debian. Une fois le service configuré
+                    et démarré, un site HTML a été déployé dans le répertoire
+                    par défaut du serveur.
+                </p>
+                <p>
+                    Le bon fonctionnement du service a été validé par un accès
+                    HTTP, confirmant la capacité de la machine virtuelle à
+                    fournir un service réseau accessible sur le réseau local.
+                </p>
+            </section>
+
+            <!-- LIVRABLES -->
+            <section class="mb-5">
+                <h2 class="h4 fw-semibold mb-3">Livrables</h2>
+                <p>
+                    Le rapport détaillé de la SAÉ, rédigé en LaTeX, présente
+                    l’ensemble des choix techniques, des configurations mises
+                    en œuvre ainsi que les résultats obtenus au cours du projet.
+                </p>
+
+                <a href="../assets/pdf/SAE103.pdf"
+                   class="btn btn-outline-secondary mt-2"
+                   target="_blank">
+                    Télécharger le rapport (PDF)
+                </a>
+            </section>
+
+        </div>
+    </div>
+</main>
+
+<footer class="bg-dark text-light py-3">
+    <div class="container text-center">
+        <small>
+            © SAÉ 1.03 — Linux System Deployment<br>
+            Thadsan THANAM · Martin NADARADJANE
+        </small>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

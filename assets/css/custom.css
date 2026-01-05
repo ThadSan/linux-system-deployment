@@ -1,0 +1,51 @@
+/* ===============================
+   Custom styles — SAÉ 1.03
+   =============================== */
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Titles */
+h1, h2, h3 {
+    letter-spacing: 0.3px;
+}
+
+/* Sections spacing consistency */
+section {
+    scroll-margin-top: 80px; /* pour la navbar fixe */
+}
+
+/* Cards refinement */
+.card {
+    border: none;
+}
+
+/* Footer */
+footer small {
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.85;
+}
+
+/* Buttons */
+.btn-primary {
+    --bs-btn-bg: #0d6efd;
+    --bs-btn-border-color: #0d6efd;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+}
+
+.btn-outline-secondary {
+    border-width: 2px;
+}
